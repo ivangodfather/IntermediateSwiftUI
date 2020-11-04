@@ -82,6 +82,7 @@ struct AnimationButtonStyleView: View {
 
     var body: some View {
         VStack(spacing: 64) {
+            Text("Animated button styles").font(.title)
             AnimatedButton(style: AnimatedCircularButtonStyle.self) {
                 print("Pressed")
             } label: {
