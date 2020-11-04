@@ -16,6 +16,7 @@
 		4225C15E25519D5800C2E2CD /* ToggleStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C15D25519D5800C2E2CD /* ToggleStyleView.swift */; };
 		4225C16125519F7200C2E2CD /* ProgressStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C16025519F7200C2E2CD /* ProgressStyleView.swift */; };
 		4225C1642552946900C2E2CD /* LabelStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C1632552946900C2E2CD /* LabelStyleView.swift */; };
+		4245A1A32552A8F500297BC2 /* AnimationButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4245A1A22552A8F500297BC2 /* AnimationButtonStyleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4225C15D25519D5800C2E2CD /* ToggleStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleView.swift; sourceTree = "<group>"; };
 		4225C16025519F7200C2E2CD /* ProgressStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStyleView.swift; sourceTree = "<group>"; };
 		4225C1632552946900C2E2CD /* LabelStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyleView.swift; sourceTree = "<group>"; };
+		4245A1A22552A8F500297BC2 /* AnimationButtonStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				4225C15D25519D5800C2E2CD /* ToggleStyleView.swift */,
 				4225C16025519F7200C2E2CD /* ProgressStyleView.swift */,
 				4225C1632552946900C2E2CD /* LabelStyleView.swift */,
+				4245A1A22552A8F500297BC2 /* AnimationButtonStyleView.swift */,
 				4225C1422551746200C2E2CD /* Assets.xcassets */,
 				4225C1472551746200C2E2CD /* Info.plist */,
 				4225C13E2551746000C2E2CD /* IntermediateSwiftUIApp.swift */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4225C1502551756100C2E2CD /* UserDefaultsPropertyWrapper.swift in Sources */,
+				4245A1A32552A8F500297BC2 /* AnimationButtonStyleView.swift in Sources */,
 				4225C16125519F7200C2E2CD /* ProgressStyleView.swift in Sources */,
 				4225C1412551746000C2E2CD /* DocumentPropertyWrapperView.swift in Sources */,
 				4225C13F2551746000C2E2CD /* IntermediateSwiftUIApp.swift in Sources */,
