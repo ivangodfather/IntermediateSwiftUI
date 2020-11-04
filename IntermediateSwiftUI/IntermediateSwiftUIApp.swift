@@ -17,6 +17,7 @@ struct IntermediateSwiftUIApp: App {
                 ButtonStyleView()
                 ToggleStyleView()
                 ProgressStyleView()
+                LabelStyleView()
             }.padding()
             .tabViewStyle(PageTabViewStyle())
         }
