@@ -19,6 +19,7 @@
 		4225C1682552DE7F00C2E2CD /* AdvancedButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C1672552DE7F00C2E2CD /* AdvancedButtonsView.swift */; };
 		4225C16B2553DD5E00C2E2CD /* PrimitiveButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C16A2553DD5E00C2E2CD /* PrimitiveButtonsView.swift */; };
 		4225C16E2553E6F800C2E2CD /* TabAndSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C16D2553E6F800C2E2CD /* TabAndSidebarView.swift */; };
+		4225C1AD2559166700C2E2CD /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C1AC2559166700C2E2CD /* LineChartView.swift */; };
 		4245A1A32552A8F500297BC2 /* AnimationButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4245A1A22552A8F500297BC2 /* AnimationButtonStyleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		4225C1672552DE7F00C2E2CD /* AdvancedButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedButtonsView.swift; sourceTree = "<group>"; };
 		4225C16A2553DD5E00C2E2CD /* PrimitiveButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimitiveButtonsView.swift; sourceTree = "<group>"; };
 		4225C16D2553E6F800C2E2CD /* TabAndSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAndSidebarView.swift; sourceTree = "<group>"; };
+		4225C1AC2559166700C2E2CD /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		4245A1A22552A8F500297BC2 /* AnimationButtonStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				4225C1672552DE7F00C2E2CD /* AdvancedButtonsView.swift */,
 				4225C16A2553DD5E00C2E2CD /* PrimitiveButtonsView.swift */,
 				4225C16D2553E6F800C2E2CD /* TabAndSidebarView.swift */,
+				4225C1AC2559166700C2E2CD /* LineChartView.swift */,
 				4225C1422551746200C2E2CD /* Assets.xcassets */,
 				4225C1472551746200C2E2CD /* Info.plist */,
 				4225C13E2551746000C2E2CD /* IntermediateSwiftUIApp.swift */,
@@ -176,6 +179,7 @@
 				4225C1562551829000C2E2CD /* ButtonStyleView.swift in Sources */,
 				4225C1642552946900C2E2CD /* LabelStyleView.swift in Sources */,
 				4225C16E2553E6F800C2E2CD /* TabAndSidebarView.swift in Sources */,
+				4225C1AD2559166700C2E2CD /* LineChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
