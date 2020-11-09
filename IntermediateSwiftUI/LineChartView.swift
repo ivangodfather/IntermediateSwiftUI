@@ -55,10 +55,16 @@ struct LineChart: View {
 }
 
 struct LineChartView: View {
-    let data: [Double] = [0, 1.5, 3, 5, 4, 2, 3, 4, 4.5, 6, 7, 5]
+    @State var data: [Double] = [0, 1.5, 3, 5, 4, 2, 3, 4, 4.5, 6, 7, 5]
     
     var body: some View {
-        LineChart(data: data, showBullets: true, color: .blue)
+        VStack {
+            LineChart(data: data, showBullets: true, color: .blue)
+
+        }
+        .onTapGesture {
+            data = data.reversed()
+        }
     }
 }
 

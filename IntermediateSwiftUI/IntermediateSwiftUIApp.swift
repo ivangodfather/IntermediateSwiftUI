@@ -12,6 +12,7 @@ struct IntermediateSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
+                PieChartView()
                 LineChartView()
                 AnimationButtonStyleView()
                 DocumentPropertyWrapperView()
@@ -19,9 +20,8 @@ struct IntermediateSwiftUIApp: App {
                 ButtonStyleView()
                 ToggleStyleView()
                 ProgressStyleView()
-                LabelStyleView()
+//                LabelStyleView()
                 AdvancedButtonsView()
-                PrimitiveButtonsView()
             }.padding()
             .tabViewStyle(PageTabViewStyle())
         }

@@ -94,18 +94,18 @@ struct CancellableButtonStyle: PrimitiveButtonStyle {
 
 struct PrimitiveButtonsView: View {
     var body: some View {
-        VStack(spacing: 64) {
-            Button {
-                print("pressed")
-            } label: {
-                Text("Press me")
-            }.buttonStyle(CustomButtonType())
-            Button {
-                print("launched!")
-            } label: {
-                Text("Launch")
-            }.buttonStyle(CancellableButtonStyle())
-        }
+            VStack(spacing: 64) {
+                Button {
+                    print("pressed")
+                } label: {
+                    Text("Press me")
+                }.buttonStyle(CustomButtonType())
+                Button {
+                    print("launched!")
+                } label: {
+                    Text("Launch")
+                }.buttonStyle(CancellableButtonStyle())
+            }
 
     }
 }
