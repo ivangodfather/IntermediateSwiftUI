@@ -12,11 +12,12 @@ struct IntermediateSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
+                BarChartView()
                 PieChartView()
                 LineChartView()
                 AnimationButtonStyleView()
                 DocumentPropertyWrapperView()
-                UserDefaultsPropertyWrapperView()
+//                UserDefaultsPropertyWrapperView()
                 ButtonStyleView()
                 ToggleStyleView()
                 ProgressStyleView()
