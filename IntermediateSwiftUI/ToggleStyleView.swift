@@ -24,8 +24,13 @@ struct CheckboxToggleStyle: ToggleStyle {
 struct ToggleStyleView: View {
     @State private var showDetail = false
     var body: some View {
-        Toggle("Show detail", isOn: $showDetail)
-            .toggleStyle(CheckboxToggleStyle())
+        VStack {
+            Text("Custom toggle").font(.title).bold().padding(.vertical)
+            Spacer()
+            Toggle("Show detail", isOn: $showDetail)
+                .toggleStyle(CheckboxToggleStyle())
+            Spacer()
+        }
     }
 }
 

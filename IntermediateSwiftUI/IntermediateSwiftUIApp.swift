@@ -11,20 +11,38 @@ import SwiftUI
 struct IntermediateSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-			CustomView()
-//            TabView {
-//                PieChartView()
-//                LineChartView()
-//                AnimationButtonStyleView()
-//                DocumentPropertyWrapperView()
-//                UserDefaultsPropertyWrapperView()
-//                ButtonStyleView()
-//                ToggleStyleView()
-//                ProgressStyleView()
-////                LabelStyleView()
-//                AdvancedButtonsView()
-//            }.padding()
-//            .tabViewStyle(PageTabViewStyle())
+            TabView {
+				BottomMenuView()
+					.tabItem {
+						Image(systemName: "filemenu.and.cursorarrow")
+						Text("BottomMenu")
+					}
+                TabView {
+                    BarChartView()
+                    PieChartView()
+                    LineChartView()
+                }
+                .tabViewStyle(PageTabViewStyle())
+                .tabItem {
+                    Image(systemName: "chart.pie")
+                    Text("Charts")
+                }
+                TabView {
+                    AnimationButtonStyleView()
+                    ButtonStyleView()
+                    AdvancedButtonsView()
+                    ToggleStyleView()
+                    ProgressStyleView()
+                }
+                .tabViewStyle(PageTabViewStyle())
+                .tabItem {
+                    Image(systemName: "square.on.circle")
+                    Text("Buttons")
+                }
+
+            }
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+            .tabViewStyle(DefaultTabViewStyle())
         }
     }
 }

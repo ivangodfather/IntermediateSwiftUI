@@ -42,21 +42,14 @@ struct AquaButtonStyle: ButtonStyle {
 struct AdvancedButtonsView: View {
     var body: some View {
         VStack(spacing: 24) {
-            Text("Advanced buttons").font(.title)
+            Text("Advance Button").font(.title).bold().padding(.vertical)
+            Spacer()
             Button {
                 print(".")
             } label: {
                 Text("Press me!")
             }.buttonStyle(AquaButtonStyle())
-
-            Image(systemName: "house")
-                .resizable()
-                .frame(width: 250)
-                .aspectRatio(1, contentMode: .fit)
-                .mask(
-                    Circle()
-                        .frame(width: 200)
-                )
+            Spacer()
         }
     }
 }

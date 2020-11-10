@@ -92,15 +92,18 @@ struct PushButtonStyle: ButtonStyle {
 struct ButtonStyleView: View {
     var body: some View {
         VStack {
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Text("Button Styles").font(.title).bold().padding(.vertical)
+            Spacer()
+            Button(action: {}, label: {
                 Text("Button")
             }).buttonStyle(ColoredButtonStyle(color: .blue))
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {}, label: {
                 Text("Button")
             }).buttonStyle(StripedRectangleButtonStyle())
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {}, label: {
                 Image(systemName: "star")
             }).buttonStyle(PushButtonStyle())
+            Spacer()
         }
     }
 }

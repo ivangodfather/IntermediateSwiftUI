@@ -34,16 +34,25 @@ struct ProgressStyleView: View {
     @State private var progress = 0.0
 
     var body: some View {
-        ProgressView("Test", value: progress)
-            .progressViewStyle(CustomProgressViewStyle())
-            .frame(width: 200)
-            .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
-                withAnimation {
-                    if progress < 1 {
-                        progress += 0.2
+        VStack {
+            Text("Custom PorgressView").font(.title).bold().padding(.vertical)
+            ProgressView("Test", value: progress)
+                .progressViewStyle(CustomProgressViewStyle())
+                .frame(width: 200)
+            Button {
+                    withAnimation {
+                        if progress < 1 {
+                            progress += 0.2
+                        } else {
+                            progress = 0
+                        }
                     }
-                }
-            })
+            } label: {
+                Text("Update Progress").font(.title)
+                    .fontWeight(.bold).padding(.bottom, 64)
+            }
+        }
+
     }
 }
 
