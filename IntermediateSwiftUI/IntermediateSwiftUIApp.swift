@@ -11,19 +11,20 @@ import SwiftUI
 struct IntermediateSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView {
-                PieChartView()
-                LineChartView()
-                AnimationButtonStyleView()
-                DocumentPropertyWrapperView()
-                UserDefaultsPropertyWrapperView()
-                ButtonStyleView()
-                ToggleStyleView()
-                ProgressStyleView()
-//                LabelStyleView()
-                AdvancedButtonsView()
-            }.padding()
-            .tabViewStyle(PageTabViewStyle())
+			CustomView()
+//            TabView {
+//                PieChartView()
+//                LineChartView()
+//                AnimationButtonStyleView()
+//                DocumentPropertyWrapperView()
+//                UserDefaultsPropertyWrapperView()
+//                ButtonStyleView()
+//                ToggleStyleView()
+//                ProgressStyleView()
+////                LabelStyleView()
+//                AdvancedButtonsView()
+//            }.padding()
+//            .tabViewStyle(PageTabViewStyle())
         }
     }
 }

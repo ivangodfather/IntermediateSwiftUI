@@ -30,7 +30,7 @@ struct PieSegment: Shape, Identifiable {
         let radius = min(rect.width, rect.height) / 2
         path.move(to: center)
         path.addRelativeArc(center: center, radius: radius, startAngle: Angle(radians: startAngle), delta: Angle(radians: amount))
-        return path
+		return path.applying(CGAffineTransform(scaleX: 0.5, y: 0.5)).applying(CGAffineTransform(translationX: rect.midX / 2, y: rect.midY / 2))
     }
 }
 
