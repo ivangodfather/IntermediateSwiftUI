@@ -65,8 +65,11 @@ struct BarChartView: View {
         VStack {
             if data.isEmpty {
                 Text("Loading").onAppear(perform: makeData)
+            } else {
+                BarChart(data: data)
+                    .padding()
+                    .padding(.bottom)
             }
-            BarChart(data: data)
         }
         .padding()
         .onTapGesture(perform: makeData)
