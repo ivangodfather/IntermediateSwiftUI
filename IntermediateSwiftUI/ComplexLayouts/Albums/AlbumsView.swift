@@ -65,7 +65,7 @@ struct AlbumsView: View {
             .toolbar {
 
             }
-        }.preferredColorScheme(.dark)
+        }
 
     }
 }

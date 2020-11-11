@@ -13,6 +13,7 @@ struct IntermediateSwiftUIApp: App {
         WindowGroup {
             TabView {
                 TabView {
+                    CustomTabView()
                     AlbumsView()
                     BottomMenuView()
                 }
@@ -47,6 +48,7 @@ struct IntermediateSwiftUIApp: App {
             }
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             .tabViewStyle(DefaultTabViewStyle())
+            .preferredColorScheme(.dark)
         }
     }
 }
