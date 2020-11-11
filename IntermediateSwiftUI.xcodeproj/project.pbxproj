@@ -78,20 +78,11 @@
 		4225C13D2551746000C2E2CD /* IntermediateSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				4225C1402551746000C2E2CD /* DocumentPropertyWrapperView.swift */,
-				4225C14F2551756100C2E2CD /* UserDefaultsPropertyWrapper.swift */,
-				4225C1552551829000C2E2CD /* ButtonStyleView.swift */,
-				4225C15D25519D5800C2E2CD /* ToggleStyleView.swift */,
-				4225C16025519F7200C2E2CD /* ProgressStyleView.swift */,
-				4225C1632552946900C2E2CD /* LabelStyleView.swift */,
-				4245A1A22552A8F500297BC2 /* AnimationButtonStyleView.swift */,
-				4225C1672552DE7F00C2E2CD /* AdvancedButtonsView.swift */,
-				4225C16A2553DD5E00C2E2CD /* PrimitiveButtonsView.swift */,
+				4225C1BF255BC0BF00C2E2CD /* Charts_ */,
+				4225C1BE255BC0B000C2E2CD /* Styling */,
+				4225C1BD255BC09600C2E2CD /* Property Wrappers */,
+				4225C1BC255BC08D00C2E2CD /* ComplexLayouts */,
 				4225C16D2553E6F800C2E2CD /* TabAndSidebarView.swift */,
-				4225C1AC2559166700C2E2CD /* LineChartView.swift */,
-				4225C1AF255985FC00C2E2CD /* PieChartView.swift */,
-				42488706255A9A3E00819994 /* BottomMenuView.swift */,
-				4225C1B22559A37700C2E2CD /* BarChartView.swift */,
 				4225C1422551746200C2E2CD /* Assets.xcassets */,
 				4225C1472551746200C2E2CD /* Info.plist */,
 				4225C13E2551746000C2E2CD /* IntermediateSwiftUIApp.swift */,
@@ -106,6 +97,47 @@
 				4225C1452551746200C2E2CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4225C1BC255BC08D00C2E2CD /* ComplexLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				42488706255A9A3E00819994 /* BottomMenuView.swift */,
+			);
+			path = ComplexLayouts;
+			sourceTree = "<group>";
+		};
+		4225C1BD255BC09600C2E2CD /* Property Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				4225C1402551746000C2E2CD /* DocumentPropertyWrapperView.swift */,
+				4225C14F2551756100C2E2CD /* UserDefaultsPropertyWrapper.swift */,
+			);
+			path = "Property Wrappers";
+			sourceTree = "<group>";
+		};
+		4225C1BE255BC0B000C2E2CD /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				4225C1552551829000C2E2CD /* ButtonStyleView.swift */,
+				4225C15D25519D5800C2E2CD /* ToggleStyleView.swift */,
+				4225C16025519F7200C2E2CD /* ProgressStyleView.swift */,
+				4225C1632552946900C2E2CD /* LabelStyleView.swift */,
+				4245A1A22552A8F500297BC2 /* AnimationButtonStyleView.swift */,
+				4225C1672552DE7F00C2E2CD /* AdvancedButtonsView.swift */,
+				4225C16A2553DD5E00C2E2CD /* PrimitiveButtonsView.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		4225C1BF255BC0BF00C2E2CD /* Charts_ */ = {
+			isa = PBXGroup;
+			children = (
+				4225C1AC2559166700C2E2CD /* LineChartView.swift */,
+				4225C1AF255985FC00C2E2CD /* PieChartView.swift */,
+				4225C1B22559A37700C2E2CD /* BarChartView.swift */,
+			);
+			path = Charts_;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
