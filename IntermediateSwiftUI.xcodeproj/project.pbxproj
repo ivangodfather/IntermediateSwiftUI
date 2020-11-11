@@ -22,6 +22,9 @@
 		4225C1AD2559166700C2E2CD /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C1AC2559166700C2E2CD /* LineChartView.swift */; };
 		4225C1B0255985FC00C2E2CD /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C1AF255985FC00C2E2CD /* PieChartView.swift */; };
 		4225C1B32559A37700C2E2CD /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C1B22559A37700C2E2CD /* BarChartView.swift */; };
+		4225C1C1255BC49600C2E2CD /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C1C0255BC49600C2E2CD /* AlbumsView.swift */; };
+		4225C1C6255BC51100C2E2CD /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225C1C5255BC51100C2E2CD /* Album.swift */; };
+		4225C1C9255BC53B00C2E2CD /* Assets2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4225C1C8255BC53B00C2E2CD /* Assets2.xcassets */; };
 		4245A1A32552A8F500297BC2 /* AnimationButtonStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4245A1A22552A8F500297BC2 /* AnimationButtonStyleView.swift */; };
 		42488707255A9A3E00819994 /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42488706255A9A3E00819994 /* BottomMenuView.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,9 @@
 		4225C1AC2559166700C2E2CD /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		4225C1AF255985FC00C2E2CD /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		4225C1B22559A37700C2E2CD /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		4225C1C0255BC49600C2E2CD /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
+		4225C1C5255BC51100C2E2CD /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		4225C1C8255BC53B00C2E2CD /* Assets2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets2.xcassets; sourceTree = "<group>"; };
 		4245A1A22552A8F500297BC2 /* AnimationButtonStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButtonStyleView.swift; sourceTree = "<group>"; };
 		42488706255A9A3E00819994 /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +90,7 @@
 				4225C1BC255BC08D00C2E2CD /* ComplexLayouts */,
 				4225C16D2553E6F800C2E2CD /* TabAndSidebarView.swift */,
 				4225C1422551746200C2E2CD /* Assets.xcassets */,
+				4225C1C8255BC53B00C2E2CD /* Assets2.xcassets */,
 				4225C1472551746200C2E2CD /* Info.plist */,
 				4225C13E2551746000C2E2CD /* IntermediateSwiftUIApp.swift */,
 				4225C1442551746200C2E2CD /* Preview Content */,
@@ -102,6 +109,7 @@
 		4225C1BC255BC08D00C2E2CD /* ComplexLayouts */ = {
 			isa = PBXGroup;
 			children = (
+				4225C1C4255BC50500C2E2CD /* Albums */,
 				42488706255A9A3E00819994 /* BottomMenuView.swift */,
 			);
 			path = ComplexLayouts;
@@ -138,6 +146,15 @@
 				4225C1B22559A37700C2E2CD /* BarChartView.swift */,
 			);
 			path = Charts_;
+			sourceTree = "<group>";
+		};
+		4225C1C4255BC50500C2E2CD /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				4225C1C0255BC49600C2E2CD /* AlbumsView.swift */,
+				4225C1C5255BC51100C2E2CD /* Album.swift */,
+			);
+			path = Albums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +216,7 @@
 			files = (
 				4225C1462551746200C2E2CD /* Preview Assets.xcassets in Resources */,
 				4225C1432551746200C2E2CD /* Assets.xcassets in Resources */,
+				4225C1C9255BC53B00C2E2CD /* Assets2.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +230,7 @@
 				4225C1502551756100C2E2CD /* UserDefaultsPropertyWrapper.swift in Sources */,
 				4245A1A32552A8F500297BC2 /* AnimationButtonStyleView.swift in Sources */,
 				4225C1B0255985FC00C2E2CD /* PieChartView.swift in Sources */,
+				4225C1C6255BC51100C2E2CD /* Album.swift in Sources */,
 				42488707255A9A3E00819994 /* BottomMenuView.swift in Sources */,
 				4225C16125519F7200C2E2CD /* ProgressStyleView.swift in Sources */,
 				4225C1412551746000C2E2CD /* DocumentPropertyWrapperView.swift in Sources */,
@@ -223,6 +242,7 @@
 				4225C1642552946900C2E2CD /* LabelStyleView.swift in Sources */,
 				4225C1B32559A37700C2E2CD /* BarChartView.swift in Sources */,
 				4225C16E2553E6F800C2E2CD /* TabAndSidebarView.swift in Sources */,
+				4225C1C1255BC49600C2E2CD /* AlbumsView.swift in Sources */,
 				4225C1AD2559166700C2E2CD /* LineChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

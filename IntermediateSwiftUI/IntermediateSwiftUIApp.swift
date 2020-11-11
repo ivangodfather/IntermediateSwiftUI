@@ -12,11 +12,15 @@ struct IntermediateSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-				BottomMenuView()
-					.tabItem {
-						Image(systemName: "filemenu.and.cursorarrow")
-						Text("BottomMenu")
-					}
+                TabView {
+                    AlbumsView()
+                    BottomMenuView()
+                }
+                .tabViewStyle(PageTabViewStyle())
+                .tabItem {
+                    Image(systemName: "filemenu.and.cursorarrow")
+                    Text("BottomMenu")
+                }
                 TabView {
                     BarChartView()
                     PieChartView()
