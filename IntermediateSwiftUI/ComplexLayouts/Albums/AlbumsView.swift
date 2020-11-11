@@ -24,12 +24,13 @@ struct AlbumsView: View {
                 Text("Albums View").font(.largeTitle).fontWeight(.bold)
                 Spacer()
                 Button {
-                    if columns.count == 2 {
-                        columns.removeLast()
-                    } else {
-                        columns.append(columns.first!)
-                    }
-                    withAnimation {
+
+                    withAnimation(Animation.easeIn(duration: 0.7)) {
+                        if columns.count == 2 {
+                            columns.removeLast()
+                        } else {
+                            columns.append(columns.first!)
+                        }
                         displayVertical = columns.count == 2
                     }
                 } label: {
@@ -44,12 +45,13 @@ struct AlbumsView: View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(albums, id: \.album_name) { album in
-                        AlbumGridView(displayVertical: displayVertical) {
+                        AlbumGridView(displayVertical: displayVertical, identifier: album.album_name) {
                             Image(album.album_cover)
                                 .resizable()
                                 .frame(width: coverWidth, height: coverWidth)
                                 .aspectRatio(1, contentMode: .fill)
                                 .cornerRadius(16)
+                                .tag(1)
                         } detail: {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text(album.album_name).fontWeight(.semibold)
@@ -71,25 +73,33 @@ struct AlbumsView: View {
 struct AlbumGridView<Image: View, Detail: View>: View {
 
     var displayVertical: Bool
+    var identifier: String
     var image: Image
     var detail: Detail
+    let uuid = Int.random(in: 1...100)
+    @Namespace private var animation
 
-    init(displayVertical: Bool, @ViewBuilder image: () -> Image, @ViewBuilder detail: () -> Detail) {
+    init(displayVertical: Bool, identifier: String, @ViewBuilder image: () -> Image, @ViewBuilder detail: () -> Detail) {
         self.displayVertical = displayVertical
         self.image = image()
         self.detail = detail()
+        self.identifier = identifier
     }
 
     var body: some View {
         if displayVertical {
             VStack {
                 image
+                    .matchedGeometryEffect(id: "image\(identifier)", in: animation)
                 detail
+                    .matchedGeometryEffect(id: "detail\(identifier)", in: animation)
             }
         } else {
             HStack {
                 image
+                    .matchedGeometryEffect(id: "image\(identifier)", in: animation)
                 detail
+                    .matchedGeometryEffect(id: "detail\(identifier)", in: animation)
                 Spacer()
             }.padding(8)
         }
