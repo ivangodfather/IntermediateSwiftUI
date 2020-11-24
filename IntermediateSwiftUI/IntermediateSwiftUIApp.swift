@@ -20,7 +20,7 @@ struct IntermediateSwiftUIApp: App {
                 .tabViewStyle(PageTabViewStyle())
                 .tabItem {
                     Image(systemName: "filemenu.and.cursorarrow")
-                    Text("BottomMenu")
+                    Text("Complex views")
                 }
                 TabView {
                     BarChartView()
